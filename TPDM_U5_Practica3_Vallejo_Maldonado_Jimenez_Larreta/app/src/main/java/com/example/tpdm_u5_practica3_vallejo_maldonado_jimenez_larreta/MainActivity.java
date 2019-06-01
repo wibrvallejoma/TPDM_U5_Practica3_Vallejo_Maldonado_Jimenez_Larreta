@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     Button CB,LSC,UD,F,DOMO,UVP,LICBI,K,P,J,LIIA,CI,
             G,G_Prima,AD,A,A_Prima,B,B_Prima,S,Q,X,N,M,
             L,H,Q_Prima;
-    float mx,my;
     ImageView r;
 
 
@@ -25,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         r= findViewById(R.id.mapa);
-        int iH=r.getDrawable().getIntrinsicHeight();//original height of underlying image
-        int iW=r.getDrawable().getIntrinsicWidth();
+
 
         CB = findViewById(R.id.CB);
         LSC = findViewById(R.id.LSC);
@@ -65,9 +63,6 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("width: "+width);
         System.out.println("height: "+height);
 
-        //Lo de Keylord
-
-        //
         CB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -228,122 +223,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-            }
-        });
-        int maxX = (int)(( iW/ 2) - (getWindowManager().getDefaultDisplay().getWidth() / 2));
-        int maxY = (int)(( iH/ 2) - (getWindowManager().getDefaultDisplay().getHeight() / 2));
-
-        // set scroll limits
-        final int maxLeft = (maxX * -1);
-        final int maxRight = maxX;
-        final int maxTop = (maxY * -1);
-        final int maxBottom = maxY;
-
-        // set touchlistener
-        r.setOnTouchListener(new View.OnTouchListener()
-        {
-            float downX, downY;
-            int totalX, totalY;
-            int scrollByX, scrollByY;
-            public boolean onTouch(View view, MotionEvent event)
-            {
-                float currentX, currentY;
-                switch (event.getAction())
-                {
-                    case MotionEvent.ACTION_DOWN:
-                        downX = event.getX();
-                        downY = event.getY();
-                        break;
-
-                    case MotionEvent.ACTION_MOVE:
-                        currentX = event.getX();
-                        currentY = event.getY();
-                        scrollByX = (int)(downX - currentX);
-                        scrollByY = (int)(downY - currentY);
-
-                        // scrolling to left side of image (pic moving to the right)
-                        if (currentX > downX)
-                        {
-                            if (totalX == maxLeft)
-                            {
-                                scrollByX = 0;
-                            }
-                            if (totalX > maxLeft)
-                            {
-                                totalX = totalX + scrollByX;
-                            }
-                            if (totalX < maxLeft)
-                            {
-                                scrollByX = maxLeft - (totalX - scrollByX);
-                                totalX = maxLeft;
-                            }
-                        }
-
-                        // scrolling to right side of image (pic moving to the left)
-                        if (currentX < downX)
-                        {
-                            if (totalX == maxRight)
-                            {
-                                scrollByX = 0;
-                            }
-                            if (totalX < maxRight)
-                            {
-                                totalX = totalX + scrollByX;
-                            }
-                            if (totalX > maxRight)
-                            {
-                                scrollByX = maxRight - (totalX - scrollByX);
-                                totalX = maxRight;
-                            }
-                        }
-
-                        // scrolling to top of image (pic moving to the bottom)
-                        if (currentY > downY)
-                        {
-                            if (totalY == maxTop)
-                            {
-                                scrollByY = 0;
-                            }
-                            if (totalY > maxTop)
-                            {
-                                totalY = totalY + scrollByY;
-                            }
-                            if (totalY < maxTop)
-                            {
-                                scrollByY = maxTop - (totalY - scrollByY);
-                                totalY = maxTop;
-                            }
-                        }
-
-                        // scrolling to bottom of image (pic moving to the top)
-                        if (currentY < downY)
-                        {
-                            if (totalY == maxBottom)
-                            {
-                                scrollByY = 0;
-                            }
-                            if (totalY < maxBottom)
-                            {
-                                totalY = totalY + scrollByY;
-                            }
-                            if (totalY > maxBottom)
-                            {
-                                scrollByY = maxBottom - (totalY - scrollByY);
-                                totalY = maxBottom;
-                            }
-                        }
-                        //b.scrollTo(scrollByX, scrollByY);
-                        H.setX(H.getX()-scrollByX);
-                        H.setY(H.getY()-scrollByY);
-
-                        r.scrollBy(scrollByX, scrollByY);
-                        downX = currentX;
-                        downY = currentY;
-                        break;
-
-                }
-
-                return true;
             }
         });
 
