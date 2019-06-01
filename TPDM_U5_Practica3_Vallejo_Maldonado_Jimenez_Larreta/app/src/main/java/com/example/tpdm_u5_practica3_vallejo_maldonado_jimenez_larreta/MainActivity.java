@@ -18,15 +18,14 @@ public class MainActivity extends AppCompatActivity {
     Button CB,LSC,UD,F,DOMO,UVP,LICBI,K,P,J,LIIA,CI,
             G,G_Prima,AD,A,A_Prima,B,B_Prima,S,Q,X,N,M,
             L,H,Q_Prima;
-    ImageView r;
-    Bitmap img;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        r= findViewById(R.id.mapa);
+
 
 
         CB = findViewById(R.id.CB);
