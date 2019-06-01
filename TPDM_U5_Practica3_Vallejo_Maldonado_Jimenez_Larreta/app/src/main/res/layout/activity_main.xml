@@ -1,18 +1,289 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mapatec"
     tools:context=".MainActivity">
 
-    <TextView
+
+
+    <Button
+        android:id="@+id/CB"
+        android:layout_width="35dp"
+        android:layout_height="179dp"
+        android:layout_x="152dp"
+        android:layout_y="228dp"
+        android:background="#CF6220"
+        android:text="CB"
+        android:textColor="#FEFEFE"
+        />
+
+    <Button
+        android:id="@+id/LSC"
+        android:layout_width="55dp"
+        android:layout_height="62dp"
+        android:layout_x="210dp"
+        android:layout_y="226dp"
+        android:background="#CF6220"
+        android:text="LSC"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/UD"
+        android:layout_width="43dp"
+        android:layout_height="92dp"
+        android:layout_x="243dp"
+        android:layout_y="470dp"
+        android:background="#CF6220"
+        android:text="UD"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/F"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_x="416dp"
+        android:layout_y="233dp"
+        android:background="#CF6220"
+        android:text="F"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/DOMO"
+        android:layout_width="66dp"
+        android:layout_height="125dp"
+        android:layout_x="896dp"
+        android:layout_y="323dp"
+        android:background="#CF6220"
+        android:text="DOMO"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/UVP"
+        android:layout_width="73dp"
+        android:layout_height="80dp"
+        android:layout_x="169dp"
+        android:layout_y="48dp"
+        android:background="#CF6220"
+        android:text="UVP"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/LICBI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_x="510dp"
+        android:layout_y="124dp"
+        android:background="#CF6220"
+        android:text="LICBI"
+        android:textColor="#FEFEFE" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/K"
+        android:layout_width="22dp"
+        android:layout_height="74dp"
+        android:layout_x="442dp"
+        android:layout_y="340dp"
+        android:background="#CF6220"
+        android:text="K"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/P"
+        android:layout_width="22dp"
+        android:layout_height="128dp"
+        android:layout_x="604dp"
+        android:layout_y="310dp"
+        android:background="#CF6220"
+        android:text="P"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/J"
+        android:layout_width="22dp"
+        android:layout_height="77dp"
+        android:layout_x="491dp"
+        android:layout_y="306dp"
+        android:background="#CF6220"
+        android:text="J"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/LIIA"
+        android:layout_width="63dp"
+        android:layout_height="76dp"
+        android:layout_x="333dp"
+        android:layout_y="72dp"
+        android:background="#CF6220"
+        android:text="LIIA"
+        android:textColor="#FEFEFE" />
+
+    <Button
+    android:id="@+id/CI"
+    android:layout_width="63dp"
+    android:layout_height="79dp"
+    android:layout_x="440dp"
+    android:layout_y="559dp"
+    android:background="#CF6220"
+    android:text="CI"
+    android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/G"
+        android:layout_width="26dp"
+        android:layout_height="58dp"
+        android:layout_x="618dp"
+        android:layout_y="513dp"
+        android:background="#CF6220"
+        android:text="G"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/G_Prima"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:layout_x="617dp"
+        android:layout_y="598dp"
+        android:background="#CF6220"
+        android:text="G'"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/AD"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_x="412dp"
+        android:layout_y="473dp"
+        android:background="#CF6220"
+        android:text="AD"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/A"
+        android:layout_width="26dp"
+        android:layout_height="72dp"
+        android:layout_x="571dp"
+        android:layout_y="546dp"
+        android:background="#CF6220"
+        android:text="A"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/A_Prima"
+        android:layout_width="26dp"
+        android:layout_height="27dp"
+        android:layout_x="571dp"
+        android:layout_y="624dp"
+        android:background="#CF6220"
+        android:text="A'"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/B"
+        android:layout_width="25dp"
+        android:layout_height="68dp"
+        android:layout_x="644dp"
+        android:layout_y="349dp"
+        android:background="#CF6220"
+        android:text="B"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/B_Prima"
+        android:layout_width="41dp"
+        android:layout_height="114dp"
+        android:layout_x="648dp"
+        android:layout_y="218dp"
+        android:background="#CF6220"
+        android:text="B'"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/S"
+        android:layout_width="26dp"
+        android:layout_height="59dp"
+        android:layout_x="405dp"
+        android:layout_y="337dp"
+        android:background="#CF6220"
+        android:text="S"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/Q"
+        android:layout_width="24dp"
+        android:layout_height="59dp"
+        android:layout_x="662dp"
+        android:layout_y="511dp"
+        android:background="#CF6220"
+        android:text="Q"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/X"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_x="520dp"
+        android:layout_y="543dp"
+        android:background="#CF6220"
+        android:text="X"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/N"
+        android:layout_width="24dp"
+        android:layout_height="70dp"
+        android:layout_x="520dp"
+        android:layout_y="616dp"
+        android:background="#CF6220"
+        android:text="N"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/M"
+        android:layout_width="24dp"
+        android:layout_height="81dp"
+        android:layout_x="558dp"
+        android:layout_y="438dp"
+        android:background="#CF6220"
+        android:text="M"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/L"
+        android:layout_width="24dp"
+        android:layout_height="76dp"
+        android:layout_x="508dp"
+        android:layout_y="412dp"
+        android:background="#CF6220"
+        android:text="L"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/H"
+        android:layout_width="24dp"
+        android:layout_height="81dp"
+        android:layout_x="544dp"
+        android:layout_y="307dp"
+        android:background="#CF6220"
+        android:text="H"
+        android:textColor="#FEFEFE" />
+
+    <Button
+        android:id="@+id/Q_Prima"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_x="430dp"
+        android:layout_y="676dp"
+        android:background="#CF6220"
+        android:text="Q'"
+        android:textColor="#FEFEFE" />
+
+
+
+
+
+
+
+</AbsoluteLayout>
