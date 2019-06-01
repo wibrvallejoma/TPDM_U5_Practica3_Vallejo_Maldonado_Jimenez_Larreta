@@ -1,7 +1,11 @@
 package com.example.tpdm_u5_practica3_vallejo_maldonado_jimenez_larreta;
 
+import android.content.pm.ActivityInfo;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         CB = findViewById(R.id.CB);
         LSC = findViewById(R.id.LSC);
         UD = findViewById(R.id.UD);
@@ -43,6 +47,22 @@ public class MainActivity extends AppCompatActivity {
         L = findViewById(R.id.L);
         H = findViewById(R.id.H);
         Q_Prima = findViewById(R.id.Q_Prima);
+
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+
+        int height = metrics.heightPixels;
+        int width = metrics.widthPixels;
+
+        System.out.println("width: "+width);
+        System.out.println("height: "+height);
+
+        AlertDialog.Builder alerta = new AlertDialog.Builder(this);
+        alerta.setTitle("owo")
+                .setMessage("width: " + width + " height: " + height).show();
+
+
+
 
 
         CB.setOnClickListener(new View.OnClickListener() {
