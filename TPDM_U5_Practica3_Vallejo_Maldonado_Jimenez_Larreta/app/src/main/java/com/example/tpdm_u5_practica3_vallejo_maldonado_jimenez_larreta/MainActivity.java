@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
         CB = findViewById(R.id.CB);
         LSC = findViewById(R.id.LSC);
         UD = findViewById(R.id.UD);
@@ -57,14 +58,9 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("width: "+width);
         System.out.println("height: "+height);
 
-        AlertDialog.Builder alerta = new AlertDialog.Builder(this);
-        alerta.setTitle("owo")
-                .setMessage("width: " + width + " height: " + height).show();
+        //Lo de Keylord
 
-
-
-
-
+        //
         CB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
