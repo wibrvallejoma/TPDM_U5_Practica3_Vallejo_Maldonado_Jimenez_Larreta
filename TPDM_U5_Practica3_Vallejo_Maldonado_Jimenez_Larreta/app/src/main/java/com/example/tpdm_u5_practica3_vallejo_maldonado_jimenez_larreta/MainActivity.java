@@ -1,6 +1,9 @@
 package com.example.tpdm_u5_practica3_vallejo_maldonado_jimenez_larreta;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
             G,G_Prima,AD,A,A_Prima,B,B_Prima,S,Q,X,N,M,
             L,H,Q_Prima;
     ImageView r;
-
+    Bitmap img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,25 +69,25 @@ public class MainActivity extends AppCompatActivity {
         CB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Bastón","Tiene forma de baston. Area de ciencias basicas y oficinas del departamento de civil. (ya no da puente)...","CB");
             }
         });
         LSC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Laboratorio de computo.","Se encuentra el laboratorio de cisco.","LC");
             }
         });
         UD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("UD","Se encuentran las oficinas de los maestros de las carreras: ISC-ITIC,IM-IE,II. Tambien esta el laboratorio de matematicas y las oficinas del departamento de desarrollo academico.","UD");
             }
         });
         F.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Laboratorio de Civir y Elécrtica","Lo comparten estan dos carreras","F");
             }
         });
         DOMO.setOnClickListener(new View.OnClickListener() {
@@ -96,19 +99,19 @@ public class MainActivity extends AppCompatActivity {
         UVP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Vinculacion y posgrado.","Estan las aulas para la maestria en tics ademas se imparten clases de ingles en la planta baja. En la planta alta esta un \"laboratorio de computo\"","UVP");
             }
         });
         LICBI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("LICBI.","estan los robotses y dan conferencias y certificados cisco ","LICBI");
             }
         });
         K.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Edificio K","Esta la cafeteria de doña paz, y algo de los maestros","K");
             }
         });
         P.setOnClickListener(new View.OnClickListener() {
@@ -120,19 +123,19 @@ public class MainActivity extends AppCompatActivity {
         J.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Edificio J","Se sacan copias y Ploteo de planos","J");
             }
         });
         LIIA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("LIIA","Maistria y doctorado en alimentos.","LIIA");
             }
         });
         CI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Centro de Información","Biblioteca","CI");
             }
         });
         G.setOnClickListener(new View.OnClickListener() {
@@ -150,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
         AD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("AD","Se pagan las incripciones, estan los coordinadores de todas las carreras esta el centro de computo, estan servicios escolares direccion y subdireccion.","AD");
             }
         });
         A.setOnClickListener(new View.OnClickListener() {
@@ -174,13 +177,13 @@ public class MainActivity extends AppCompatActivity {
         B_Prima.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Lab de Industrial y Meca","Creemos","BP");
             }
         });
         S.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Cesa","Cesa Tepic","S");
             }
         });
         Q.setOnClickListener(new View.OnClickListener() {
@@ -204,13 +207,13 @@ public class MainActivity extends AppCompatActivity {
         M.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Laboratorio de Química","Laboratorio de Química(lo que te falta con ella)","M");
             }
         });
         L.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Laboratorio de Industrial","Laboratorio de la carrera de Ingeniería Industrial","L");
             }
         });
         H.setOnClickListener(new View.OnClickListener() {
@@ -222,9 +225,20 @@ public class MainActivity extends AppCompatActivity {
         Q_Prima.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Departamento de Arquitectura","Departamento de los de Arqui","QP");
             }
         });
 
     }
+
+    public void entrar(String titulo, String descripcion,String tipo){
+        Intent e = new Intent(this,Informacion.class);
+
+        e.putExtra("Edificio",titulo);
+        e.putExtra("Descripcion",descripcion);
+        e.putExtra("tipo",tipo);
+        startActivity(e);
+    }
+
+
 }
