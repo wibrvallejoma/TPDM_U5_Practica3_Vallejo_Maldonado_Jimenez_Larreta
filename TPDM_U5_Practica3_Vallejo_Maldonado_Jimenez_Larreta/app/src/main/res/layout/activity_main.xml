@@ -25,9 +25,9 @@
         android:layout_width="55dp"
         android:layout_height="62dp"
         android:layout_x="210dp"
-        android:layout_y="226dp"
+        android:layout_y="224dp"
         android:background="#CF6220"
-        android:text="LSC"
+        android:text="LC"
         android:textColor="#FEFEFE" />
 
     <Button
@@ -35,7 +35,7 @@
         android:layout_width="43dp"
         android:layout_height="92dp"
         android:layout_x="243dp"
-        android:layout_y="470dp"
+        android:layout_y="466dp"
         android:background="#CF6220"
         android:text="UD"
         android:textColor="#FEFEFE" />
@@ -55,7 +55,7 @@
         android:layout_width="66dp"
         android:layout_height="125dp"
         android:layout_x="896dp"
-        android:layout_y="323dp"
+        android:layout_y="290dp"
         android:background="#CF6220"
         android:text="DOMO"
         android:textColor="#FEFEFE" />
@@ -85,7 +85,7 @@
         android:layout_width="22dp"
         android:layout_height="74dp"
         android:layout_x="442dp"
-        android:layout_y="340dp"
+        android:layout_y="320dp"
         android:background="#CF6220"
         android:text="K"
         android:textColor="#FEFEFE" />
@@ -95,7 +95,7 @@
         android:layout_width="22dp"
         android:layout_height="128dp"
         android:layout_x="604dp"
-        android:layout_y="310dp"
+        android:layout_y="290dp"
         android:background="#CF6220"
         android:text="P"
         android:textColor="#FEFEFE" />
@@ -105,7 +105,7 @@
         android:layout_width="22dp"
         android:layout_height="77dp"
         android:layout_x="491dp"
-        android:layout_y="306dp"
+        android:layout_y="286dp"
         android:background="#CF6220"
         android:text="J"
         android:textColor="#FEFEFE" />
@@ -121,21 +121,21 @@
         android:textColor="#FEFEFE" />
 
     <Button
-    android:id="@+id/CI"
-    android:layout_width="63dp"
-    android:layout_height="79dp"
-    android:layout_x="440dp"
-    android:layout_y="559dp"
-    android:background="#CF6220"
-    android:text="CI"
-    android:textColor="#FEFEFE" />
+        android:id="@+id/CI"
+        android:layout_width="63dp"
+        android:layout_height="79dp"
+        android:layout_x="440dp"
+        android:layout_y="523dp"
+        android:background="#CF6220"
+        android:text="CI"
+        android:textColor="#FEFEFE" />
 
     <Button
         android:id="@+id/G"
         android:layout_width="26dp"
         android:layout_height="58dp"
         android:layout_x="618dp"
-        android:layout_y="513dp"
+        android:layout_y="510dp"
         android:background="#CF6220"
         android:text="G"
         android:textColor="#FEFEFE" />
@@ -145,7 +145,7 @@
         android:layout_width="26dp"
         android:layout_height="wrap_content"
         android:layout_x="617dp"
-        android:layout_y="598dp"
+        android:layout_y="595dp"
         android:background="#CF6220"
         android:text="G'"
         android:textColor="#FEFEFE" />
@@ -155,7 +155,7 @@
         android:layout_width="34dp"
         android:layout_height="wrap_content"
         android:layout_x="412dp"
-        android:layout_y="473dp"
+        android:layout_y="453dp"
         android:background="#CF6220"
         android:text="AD"
         android:textColor="#FEFEFE" />
@@ -170,15 +170,6 @@
         android:text="A"
         android:textColor="#FEFEFE" />
 
-    <Button
-        android:id="@+id/A_Prima"
-        android:layout_width="26dp"
-        android:layout_height="27dp"
-        android:layout_x="571dp"
-        android:layout_y="624dp"
-        android:background="#CF6220"
-        android:text="A'"
-        android:textColor="#FEFEFE" />
 
     <Button
         android:id="@+id/B"
@@ -195,7 +186,7 @@
         android:layout_width="41dp"
         android:layout_height="114dp"
         android:layout_x="648dp"
-        android:layout_y="218dp"
+        android:layout_y="195dp"
         android:background="#CF6220"
         android:text="B'"
         android:textColor="#FEFEFE" />
@@ -205,7 +196,7 @@
         android:layout_width="26dp"
         android:layout_height="59dp"
         android:layout_x="405dp"
-        android:layout_y="337dp"
+        android:layout_y="317dp"
         android:background="#CF6220"
         android:text="S"
         android:textColor="#FEFEFE" />
@@ -215,7 +206,7 @@
         android:layout_width="24dp"
         android:layout_height="59dp"
         android:layout_x="662dp"
-        android:layout_y="511dp"
+        android:layout_y="509dp"
         android:background="#CF6220"
         android:text="Q"
         android:textColor="#FEFEFE" />
@@ -225,7 +216,7 @@
         android:layout_width="24dp"
         android:layout_height="wrap_content"
         android:layout_x="520dp"
-        android:layout_y="543dp"
+        android:layout_y="540dp"
         android:background="#CF6220"
         android:text="X"
         android:textColor="#FEFEFE" />
@@ -235,7 +226,7 @@
         android:layout_width="24dp"
         android:layout_height="70dp"
         android:layout_x="520dp"
-        android:layout_y="616dp"
+        android:layout_y="614dp"
         android:background="#CF6220"
         android:text="N"
         android:textColor="#FEFEFE" />
@@ -245,7 +236,7 @@
         android:layout_width="24dp"
         android:layout_height="81dp"
         android:layout_x="558dp"
-        android:layout_y="438dp"
+        android:layout_y="425dp"
         android:background="#CF6220"
         android:text="M"
         android:textColor="#FEFEFE" />
@@ -255,7 +246,7 @@
         android:layout_width="24dp"
         android:layout_height="76dp"
         android:layout_x="508dp"
-        android:layout_y="412dp"
+        android:layout_y="410dp"
         android:background="#CF6220"
         android:text="L"
         android:textColor="#FEFEFE" />
@@ -265,7 +256,7 @@
         android:layout_width="24dp"
         android:layout_height="81dp"
         android:layout_x="544dp"
-        android:layout_y="307dp"
+        android:layout_y="294dp"
         android:background="#CF6220"
         android:text="H"
         android:textColor="#FEFEFE" />
@@ -275,7 +266,7 @@
         android:layout_width="68dp"
         android:layout_height="wrap_content"
         android:layout_x="430dp"
-        android:layout_y="676dp"
+        android:layout_y="640dp"
         android:background="#CF6220"
         android:text="Q'"
         android:textColor="#FEFEFE" />

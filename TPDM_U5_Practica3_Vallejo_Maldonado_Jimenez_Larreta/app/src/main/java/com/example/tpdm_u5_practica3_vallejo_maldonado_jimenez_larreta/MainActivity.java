@@ -16,7 +16,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     Button CB,LSC,UD,F,DOMO,UVP,LICBI,K,P,J,LIIA,CI,
-            G,G_Prima,AD,A,A_Prima,B,B_Prima,S,Q,X,N,M,
+            G,G_Prima,AD,A,B,B_Prima,S,Q,X,N,M,
             L,H,Q_Prima;
 
 
@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         G_Prima = findViewById(R.id.G_Prima);
         AD = findViewById(R.id.AD);
         A = findViewById(R.id.A);
-        A_Prima = findViewById(R.id.A_Prima);
         B = findViewById(R.id.B);
         B_Prima = findViewById(R.id.B_Prima);
         S = findViewById(R.id.S);
@@ -86,13 +85,13 @@ public class MainActivity extends AppCompatActivity {
         F.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                entrar("Laboratorio de Civir y Elécrtica","Lo comparten estan dos carreras","F");
+                entrar("Laboratorio de Civil y Elécrtica","Lo comparten estan dos carreras","F");
             }
         });
         DOMO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("DOMO","Se ubican las canchas de usos multiples","DOMO");
             }
         });
         UVP.setOnClickListener(new View.OnClickListener() {
@@ -104,49 +103,49 @@ public class MainActivity extends AppCompatActivity {
         LICBI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                entrar("LICBI.","estan los robotses y dan conferencias y certificados cisco ","LICBI");
+                entrar("LICBI.","Estan los robots y dan conferencias y certificados cisco ","LICBI");
             }
         });
         K.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                entrar("Edificio K","Esta la cafeteria de doña paz, y algo de los maestros","K");
+                entrar("Edificio K","Esta la cafeteria de doña paz actualmente cerrada","K");
             }
         });
         P.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Edificio P","Se encuentra el audiovisual y unas aulas","P");
             }
         });
         J.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                entrar("Edificio J","Se sacan copias y Ploteo de planos","J");
+                entrar("Edificio J","Se sacan copias y ploteo de planos en la planta alta, abajo se encuentra un consultorio y el salon de titulación","J");
             }
         });
         LIIA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                entrar("LIIA","Maistria y doctorado en alimentos.","LIIA");
+                entrar("LIIA","Maestría y doctorado en alimentos.","LIIA");
             }
         });
         CI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                entrar("Centro de Información","Biblioteca","CI");
+                entrar("Centro de Información","Biblioteca y vidioteca","CI");
             }
         });
         G.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Edificio G","Aulas","G");
             }
         });
         G_Prima.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Edificio G'","Aulas","GP");
             }
         });
         AD.setOnClickListener(new View.OnClickListener() {
@@ -158,49 +157,43 @@ public class MainActivity extends AppCompatActivity {
         A.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-            }
-        });
-        A_Prima.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
+                entrar("Edificio A","Aulas","A");
             }
         });
         B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Edificio B","Laboratorio quimica","B");
             }
         });
         B_Prima.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                entrar("Lab de Industrial y Meca","Creemos","BP");
+                entrar("Lab de Industrial y Meca","Se encuentran herramientas de limpieza y para mantenimiento","BP");
             }
         });
         S.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                entrar("Cesa","Cesa Tepic","S");
+                entrar("CESA","Comite estudiantil, se entregan las becas de alimentos","S");
             }
         });
         Q.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Edificio Q","Aulas generalmente para quimicos","Q");
             }
         });
         X.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Edificio X","Aulas","X");
             }
         });
         N.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Edificio N","Aulas planta baja y departamento de Admon plante alta","N");
             }
         });
         M.setOnClickListener(new View.OnClickListener() {
@@ -218,13 +211,13 @@ public class MainActivity extends AppCompatActivity {
         H.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                entrar("Edificio H","Aulas para arquitectura","H");
             }
         });
         Q_Prima.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                entrar("Departamento de Arquitectura","Departamento de los de Arqui","QP");
+                entrar("Departamento de Arquitectura","Departamento de los de Arquitectura","QP");
             }
         });
 
